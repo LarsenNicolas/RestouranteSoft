@@ -11,6 +11,7 @@ public class Menu extends BaseObject{
         super();
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.productos = productos;
     }
 
     public String getNombre() {
@@ -37,4 +38,7 @@ public class Menu extends BaseObject{
         this.productos = productos;
     }
 
+    public void addProducto(Producto producto) {
+        this.productos.add(producto);
+    }
 }

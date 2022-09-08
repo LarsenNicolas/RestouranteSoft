@@ -19,12 +19,13 @@ public class Restourante extends BaseObject {
         this.telefono = telefono;
         this.descripcion = descripcion;
         this.horario = horario;
-        mesas = new ArrayList<Mesa>();
+        this.mesas = new ArrayList<Mesa>();
     }
 
     public Restourante(String nombre) {
         super();
         this.nombre = nombre;
+        this.mesas = new ArrayList<Mesa>();
     }
 
     public String getNombre() {
@@ -80,11 +81,11 @@ public class Restourante extends BaseObject {
     }
 
     public void ocuparMesa(int numeroMesa) {
-        mesas.get(numeroMesa).setOcupada(true);
+        this.getMesaPorNumero(numeroMesa).setOcupada(true);
     }
 
-    public Mesa getMesa(int numeroMesa) {
-        return mesas.get(numeroMesa);
+    public Mesa getMesaPorNumero(int numeroMesa) {
+        return this.mesas.stream().filter(mesa -> mesa.getNumero() == numeroMesa).findFirst().get();
     }
 
     public void desocuparMesa(int numeroMesa) {
@@ -92,10 +93,14 @@ public class Restourante extends BaseObject {
     }
 
     public void eliminarMesa(int numeroMesa) {
-        mesas.remove(numeroMesa);
+        this.mesas.removeIf(mesa -> mesa.getNumero() == numeroMesa);
     }
 
     public void cambiarCapacidadMesa(int numeroMesa, int nuevaCapacidad) {
-        mesas.get(numeroMesa).setCapacidad(nuevaCapacidad);
+        getMesaPorNumero(numeroMesa).setCapacidad(nuevaCapacidad);
+    }
+
+    public List<Mesa> getMesas() {
+        return this.mesas;
     }
 }
