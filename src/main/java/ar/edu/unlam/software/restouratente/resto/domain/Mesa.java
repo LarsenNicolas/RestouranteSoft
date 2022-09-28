@@ -1,4 +1,4 @@
-package ar.edu.unlam.software.restouratente.resto.models;
+package ar.edu.unlam.software.restouratente.resto.domain;
 
 public class Mesa extends BaseObject{
     private int numero;

@@ -1,4 +1,4 @@
-package ar.edu.unlam.software.restouratente.resto.models;
+package ar.edu.unlam.software.restouratente.resto.domain;
 
 import java.util.List;
 

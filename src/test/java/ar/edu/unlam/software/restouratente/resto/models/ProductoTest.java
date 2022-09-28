@@ -1,10 +1,8 @@
 package ar.edu.unlam.software.restouratente.resto.models;
 
-import org.junit.jupiter.api.BeforeEach;
+import ar.edu.unlam.software.restouratente.resto.domain.Bebida;
+import ar.edu.unlam.software.restouratente.resto.domain.Comida;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

@@ -1,5 +1,6 @@
 package ar.edu.unlam.software.restouratente.resto.models;
 
+import ar.edu.unlam.software.restouratente.resto.domain.*;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;

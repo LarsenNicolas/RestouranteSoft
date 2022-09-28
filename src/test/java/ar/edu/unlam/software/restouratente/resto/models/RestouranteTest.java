@@ -1,5 +1,6 @@
 package ar.edu.unlam.software.restouratente.resto.models;
 
+import ar.edu.unlam.software.restouratente.resto.domain.Mesa;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
