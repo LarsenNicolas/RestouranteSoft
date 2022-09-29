@@ -1,6 +1,6 @@
 package ar.edu.unlam.software.restouratente.resto.domain;
 
-abstract class BaseObject {
+public abstract class BaseObject {
     private Long id;
 
     public Long getId() {

@@ -1,6 +1,12 @@
 package ar.edu.unlam.software.restouratente.resto.domain;
 
-import ar.edu.unlam.software.restouratente.resto.domain.*;
+import ar.edu.unlam.software.restouratente.resto.domain.menu.Menu;
+import ar.edu.unlam.software.restouratente.resto.domain.mesa.Mesa;
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Bebida;
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Comida;
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Ingrediente;
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Producto;
+import ar.edu.unlam.software.restouratente.resto.domain.restourante.Restourante;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;

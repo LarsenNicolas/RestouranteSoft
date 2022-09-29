@@ -1,5 +1,7 @@
 package ar.edu.unlam.software.restouratente.resto.domain;
 
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Bebida;
+import ar.edu.unlam.software.restouratente.resto.domain.productos.Comida;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
