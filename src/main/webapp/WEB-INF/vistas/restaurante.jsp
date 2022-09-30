@@ -9,8 +9,27 @@
     <title>Restaurante</title>
 </head>
 <body>
-    <div class="log-form">
+    <header>
         <h1>Registrar Restaurante</h1>
-    </div>
+    </header>
+    <main>
+        <form action="#" onsubmit="return validar()" name="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="especialidad">Especialidad: </label>
+            <input type="text" id="especialidad" name="especialidad">
+            <label for="direccion">Direccion: </label>
+            <input type="text" id="direccion" name="direccion">
+            <button id="ir-a-menu">Ir a Menu</button>
+            <div class="condiciones">
+                <label for="condiciones">Acepto Términos y Condiciones:</label>
+                <input type="checkbox" name="condiciones" id="condiciones">
+            </div>
+            <input type="submit" value="Enviar">
+            <div id="mensaje" class="error">
+
+            </div>
+        </form>
+    </main>
 </body>
 </html>
