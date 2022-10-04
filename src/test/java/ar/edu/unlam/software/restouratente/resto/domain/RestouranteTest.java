@@ -44,4 +44,5 @@ public class RestouranteTest extends BaseTest {
         assertEquals(6, restourante.getMesaPorNumero(1).getCapacidad());
     }
 
+
 }

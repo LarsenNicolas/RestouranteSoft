@@ -16,7 +16,7 @@ public class Restourante extends BaseObject {
     private Menu menu;
     private List<Mesa> mesas;
 
-    public Restourante(String nombre, String direccion, String telefono, String descripcion, String horario) {
+    public Restaurante(String nombre, String direccion, String telefono, String descripcion, String horario) {
         super();
         this.nombre = nombre;
         this.direccion = direccion;
@@ -26,7 +26,7 @@ public class Restourante extends BaseObject {
         this.mesas = new ArrayList<Mesa>();
     }
 
-    public Restourante(String nombre) {
+    public Restaurante(String nombre) {
         super();
         this.nombre = nombre;
         this.mesas = new ArrayList<Mesa>();
