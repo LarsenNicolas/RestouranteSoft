@@ -3,11 +3,24 @@ package ar.edu.unlam.software.restouratente.resto.domain.restaurante;
 import ar.edu.unlam.software.restouratente.resto.domain.BaseObject;
 import ar.edu.unlam.software.restouratente.resto.domain.menu.Menu;
 import ar.edu.unlam.software.restouratente.resto.domain.mesa.Mesa;
+import ar.edu.unlam.software.restouratente.resto.infrastructure.Administrador;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Restaurante extends BaseObject {
+	@Id
+	@GeneratedValue(strategy =GenerationType.IDENTITY)
+	private long Id;
     private String nombre;
     private String direccion;
     private String telefono;
@@ -15,6 +28,9 @@ public class Restaurante extends BaseObject {
     private String horario;
     private Menu menu;
     private List<Mesa> mesas;
+    
+    @ManyToOne //(optional =false , cascade = CascadeType.ALL, fetch =FetchType.EAGER)
+	private Administrador administrador;
 
     public Restaurante(String nombre, String direccion, String telefono, String descripcion, String horario) {
         super();
@@ -32,7 +48,11 @@ public class Restaurante extends BaseObject {
         this.mesas = new ArrayList<Mesa>();
     }
 
-    public String getNombre() {
+    public Restaurante() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getNombre() {
         return nombre;
     }
 
@@ -107,4 +127,9 @@ public class Restaurante extends BaseObject {
     public List<Mesa> getMesas() {
         return this.mesas;
     }
+
+	public void setAdministrador(Administrador administrador) {
+	this.administrador=administrador;
+		
+	}
 }
