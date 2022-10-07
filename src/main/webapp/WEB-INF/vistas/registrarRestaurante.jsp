@@ -21,12 +21,24 @@
     <h2>Registrar Restaurante</h2>
     <div class="log-form">
         <form action="#" onsubmit="validar()" name="form">
+            <label for="administrador">Administrador:</label>
+            <input type="text" id="administrador" name="administrador">
+            <br>
+            <br>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre">
             <br>
             <br>
             <label for="especialidad">Especialidad: </label>
             <input type="text" id="especialidad" name="especialidad">
+            <br>
+            <br>
+            <label for="cantidadMesas">Cantidad de Mesas: </label>
+            <input type="number" id="cantidadMesas" name="cantidadMesas">
+            <br>
+            <br>
+            <label for="cantidadMozos">Cantidad de Mozos: </label>
+            <input type="number" id="cantidadMozos" name="cantidadMozos">
             <br>
             <br>
             <label for="direccion">Direccion: </label>
