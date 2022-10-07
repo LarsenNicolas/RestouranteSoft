@@ -6,14 +6,14 @@ import ar.edu.unlam.software.restouratente.resto.domain.productos.Bebida;
 import ar.edu.unlam.software.restouratente.resto.domain.productos.Comida;
 import ar.edu.unlam.software.restouratente.resto.domain.productos.Ingrediente;
 import ar.edu.unlam.software.restouratente.resto.domain.productos.Producto;
-import ar.edu.unlam.software.restouratente.resto.domain.restourante.Restourante;
+import ar.edu.unlam.software.restouratente.resto.domain.restaurante.Restaurante;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BaseTest {
-    protected Restourante restourante;
+    protected Restaurante restaurante;
     protected Menu menu;
     protected Producto bebida;
     protected Producto comida;
@@ -24,7 +24,7 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp(){
-        restourante = new Restourante("Restourante de prueba");
+        restaurante = new Restaurante("Restourante de prueba");
 
         ingredientesPapasConCheddar.add(new Ingrediente("Papas"));
         ingredientesPapasConCheddar.add(new Ingrediente("Cheddar"));
@@ -44,13 +44,13 @@ public class BaseTest {
 
         menu = new Menu("Menu principal", "Menu principal del restourante de prueba",comidas);
 
-        restourante.setMenu(menu);
+        restaurante.setMenu(menu);
 
         mesa = new Mesa(1, 4, false);
-        restourante.agregarMesa(mesa);
+        restaurante.agregarMesa(mesa);
         mesa = new Mesa(2, 4, false);
-        restourante.agregarMesa(mesa);
+        restaurante.agregarMesa(mesa);
         mesa = new Mesa(3, 4, false);
-        restourante.agregarMesa(mesa);
+        restaurante.agregarMesa(mesa);
     }
 }

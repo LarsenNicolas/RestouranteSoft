@@ -1,4 +1,4 @@
-package ar.edu.unlam.software.restouratente.resto.domain.restourante;
+package ar.edu.unlam.software.restouratente.resto.domain.restaurante;
 
 import ar.edu.unlam.software.restouratente.resto.domain.BaseObject;
 import ar.edu.unlam.software.restouratente.resto.domain.menu.Menu;
@@ -7,7 +7,7 @@ import ar.edu.unlam.software.restouratente.resto.domain.mesa.Mesa;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Restourante extends BaseObject {
+public class Restaurante extends BaseObject {
     private String nombre;
     private String direccion;
     private String telefono;

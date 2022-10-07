@@ -8,7 +8,7 @@ public class MenuTest extends BaseTest {
 
     @Test
     public void RestouranteDebeTenerMenu() {
-        assertEquals(restourante.getMenu(), menu);
+        assertEquals(restaurante.getMenu(), menu);
     }
 
     @Test

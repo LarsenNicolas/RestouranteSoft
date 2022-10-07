@@ -14,14 +14,13 @@ public class ControladorRegistrarRestauranteTest {
     @Test
     public void queSePuedaRegistrarUnRestaurante(){
 
-        ControladorRegistrarRestaurante controladorRegistrarRestaurante = new ControladorRegistrarRestaurante("Lo de Juan");
+        ControladorRegistrarRestaurante controladorRegistrarRestaurante = new ControladorRegistrarRestaurante("Mi Restaurante");
 
-        ModelAndView nav = controladorRegistrarRestaurante.registrado();
+        String nombre= "Mi Restaurante";
+		ModelAndView nav = controladorRegistrarRestaurante.irARegistroExitosoRestaurante(nombre);
 
 
-
-        assertThat((List<Restaurante>)nav.getModel().get("nombres")).hasSize(1);
-
+		
     }
 
 
