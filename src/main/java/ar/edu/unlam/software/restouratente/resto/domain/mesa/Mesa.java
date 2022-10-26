@@ -7,11 +7,11 @@ public class Mesa extends BaseObject {
     private int capacidad;
     private boolean ocupada;
 
-    public Mesa(int numero, int capacidad, boolean ocupada) {
+    public Mesa(int numero, int capacidad, boolean estado) {
         super();
         this.numero = numero;
         this.capacidad = capacidad;
-        this.ocupada = ocupada;
+        this.ocupada = estado;
     }
 
     public int getNumero() {
@@ -34,7 +34,7 @@ public class Mesa extends BaseObject {
         return ocupada;
     }
 
-    public void setOcupada(boolean ocupada) {
-        this.ocupada = ocupada;
+    public void setOcupada(boolean estado) {
+        this.ocupada = estado;
     }
 }

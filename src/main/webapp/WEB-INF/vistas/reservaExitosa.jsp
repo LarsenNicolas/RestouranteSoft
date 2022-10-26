@@ -10,20 +10,20 @@
     <link href="css/registroRestaurante.css" rel="stylesheet" >
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <title>Restaurante Registro Exitoso</title>
+    <title>Mesa Asiganada</title>
 </head>
 <body>
 <header>
     <h1>S.I.R.</h1>
     <h2>Sistema Integral de Restaurante</h2>
-
 </header>
 <main>
-    <h2>Registro Exitoso!</h2>
-    <h2>Se registro su Restaurante ${nombre}</h2>
-    <button class="btn">Ir a Control de Mesas</button>
-    <button class="btn">Ir a Menu</button>
-    <button class="btn">Ir a Control de Personal</button>
+    <h2>Mesa Asignada</h2>
+    <div>
+    <p>Su mesa es la numero ${numeroDeMesa}</p>
+    </div>
+    <input type="submit" value="Enviar" >
+    <button id="mostarMenu">Mostar Menu</button>
 </main>
 <footer>
     <h3>S.I.R. (Sistema Integral de Restaurante)</h3>

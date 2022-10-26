@@ -23,7 +23,11 @@ public class ControladorRegistrarRestaurante {
     @RequestMapping(path = "/registrarRestaurante", method = RequestMethod.GET)
     public ModelAndView irARegistrarRestaurante() {
         ModelMap modelo = new ModelMap();
-        return new ModelAndView("registrarRestaurante", modelo);
+      // modelo.put("restaurantes", modelo);
+        ModelAndView nav= new ModelAndView("registrarRestaurante", modelo);
+        
+        //return new ModelAndView("registrarRestaurante", modelo);
+       return nav;
     }
 
     @RequestMapping(path = "/registroRestauranteExitoso/nombre/{nombreRestaurante}", method = RequestMethod.GET)

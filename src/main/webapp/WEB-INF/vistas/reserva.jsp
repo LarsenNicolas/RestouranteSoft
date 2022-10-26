@@ -10,20 +10,30 @@
     <link href="css/registroRestaurante.css" rel="stylesheet" >
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <title>Restaurante Registro Exitoso</title>
+    <title>Solicitar Mesa</title>
 </head>
 <body>
 <header>
     <h1>S.I.R.</h1>
     <h2>Sistema Integral de Restaurante</h2>
-
 </header>
 <main>
-    <h2>Registro Exitoso!</h2>
-    <h2>Se registro su Restaurante ${nombre}</h2>
-    <button class="btn">Ir a Control de Mesas</button>
-    <button class="btn">Ir a Menu</button>
-    <button class="btn">Ir a Control de Personal</button>
+    <h2>Solicitar Mesa</h2>
+    <div class="log-form">
+        <form action="#" onsubmit="validar()" name="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
+            <label for="cantidadComensales">Cantidad de Comensales: </label>
+            <input type="number" id="cantidadComensales" name="cantidadComensales">
+            <br>
+            <br>
+            <input type="submit" value="Enviar" ><a href="reservaExitosa">Enviar</a>>
+            <button id="pedirMesa">Pedir Mesa</button>
+            
+        </form>
+    </div>
 </main>
 <footer>
     <h3>S.I.R. (Sistema Integral de Restaurante)</h3>

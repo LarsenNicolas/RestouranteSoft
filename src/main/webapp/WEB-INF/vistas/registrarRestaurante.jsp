@@ -62,11 +62,9 @@
     <h3>S.I.R. (Sistema Integral de Restaurante)</h3>
     <div>
         <h3>Creadores: </h3>
-        <p>Bringa Juan Manuel -</p>
+       <p>Bringa Juan Manuel -</p>
         <p>Galvan Florencia -</p>
-        <p>Juhal Lorena -</p>
         <p>Larsen Nicolas -</p>
-        <p>Rementario Brenda</p>
     </div>
 </footer>
 </body>
